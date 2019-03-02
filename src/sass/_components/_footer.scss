@@ -1,0 +1,67 @@
+// -------------------------------
+//     FOOTER SECTION
+// -------------------------------
+#footer {
+	font-weight: 300;
+}
+.footer__inner {
+	max-width: 1300px;
+	margin: 3rem auto 2rem auto;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+.footer__column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.footer__icons {
+	display: flex;
+}
+.footer__column {
+	margin-top: 2rem;
+}
+.company-column {
+	flex-direction: row;
+}
+.footer__company-name {
+	font-size: 1.7rem;
+	margin-left: 1rem;
+}
+.linkedin--footer {
+	margin-left: 1.3rem;
+}
+.social-column, .dev-column {
+	&:after {
+	content: "";
+	height: 60px;
+	width: 2px;
+	background: $light__orange;
+	position: absolute;
+	left: 10px;
+	}
+}
+.dev__position {
+	font-weight: 400;
+}
+.small-footer {
+	display: flex;
+	justify-content: center;
+	background: $light__grey;
+	padding: 1rem;
+	p {
+		font-size: 0.9rem;
+	}
+}
+#map {
+	height: 15rem;
+	width: 60%;
+	filter: grayscale(100);
+	margin: 1rem;
+	margin-top: 3rem;
+}
