@@ -22,3 +22,84 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+// -------------------------------
+//     COLOR VARIABLES
+// -------------------------------
+
+$base__orange: #E18712;
+$base__grey: #191717;
+
+$light__orange: #F6B229;
+$dark__grey: #252527;
+$medium__grey: #4A4A4A;
+
+$light__grey: #f2f2f2;
+
+// -------------------------------
+//     GENERAL STYLES
+// -------------------------------
+$transition: 0.3s ease-in-out;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	font-weight: 400;
+	transition: $transition;
+}
+h1 {
+	font-size: 2.6rem;
+}
+ul {
+	list-style-type: none;
+}
+p, li, button, a {
+	font-size: 1rem;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.logo {
+	height: 5rem;
+}
+.icon {
+	height: 2.5rem;
+	font-size: 2.5rem;
+	color: $medium__grey;
+	cursor: pointer;
+	transition: $transition;
+	&:hover {
+		color: $base__orange;
+	}
+}
+.section__title {
+	margin: 1rem 2rem;
+	font-size: 2rem;
+	position: relative;
+	display: inline-block;
+	padding: 0.9rem;
+	border-top: 1px solid #787777;
+	border-bottom: 1px solid #787777;
+}
+.orange {
+	color: $base__orange;
+}
+.main {
+	text-align: center;
+}
+.button {
+	text-align: center;
+	border: 2px solid $base__orange;
+	width: 10rem;
+	background: none;
+	font-weight: 300;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: $transition;
+	&:hover {
+		background: $base__orange;
+		color: white;
+	}
+}
