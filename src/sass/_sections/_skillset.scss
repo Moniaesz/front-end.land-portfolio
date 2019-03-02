@@ -1,0 +1,45 @@
+// -------------------------------
+//     TOOLKIT SECTION
+// -------------------------------
+#toolkit {
+	background: $light__grey;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.tool__logo {
+	height: 5.5rem;
+}
+	.tool__title {
+		font-size: 1.4rem;
+		color: $base__orange;
+		margin-bottom: 1rem;
+	}
+
+// code for browsers that supports css-grid
+@supports (display: grid) {
+	.toolkit__wrapper {
+		display: grid;
+		max-width: 930px;
+		margin: 0 auto;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+		grid-gap: 2rem;
+	}
+}
+// code for browsers that does not supports css-grid
+@supports not (display: grid) {
+	.toolkit__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		max-width: 900px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.tool {
+		width: 10rem;
+	}
+	.tool__logo {
+		margin-bottom: 2rem;
+	}
+}
