@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Frontend land</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	 integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	 crossorigin=""/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	 integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	 crossorigin=""></script>
+	<script src="./js/script.js"></script>
+</head>
+<body>
+
+	<!-- header -->
+	<header class="header">
+		<div class="header__inner">
+			<img class="logo header__logo" src="assets/logo.svg" alt="frontend land logo">
+			<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item"><a href="#home" class="header__link">Strona główna</a></li>
+						<li class="header__item"><a href="#portfolio" class="header__link">Projekty</a></li>
+						<li class="header__item"><a href="#toolkit" class="header__link">Umiejętności</a></li>
+						<li class="header__item"><a href="#about" class="header__link">O mnie</a></li>
+						<li class="header__item"><a href="#footer" class="header__link">Kontakt</a></li>
+					</ul>
+					<ul class="header__social-icons">
+						<li><a href="https://github.com/Moniaesz" target="_blank"><i class="fab fa-github header__icon icon-github icon"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/monika-szypowicz/" target="_blank"><i class="fab fa-linkedin header__icon icon-linkedin icon"></i></a></li>
+					</ul>
+					<ul class="languages">
+						<li class="language language-pl">PL</li>
+						<li class="slash">/</li>
+						<li class="language language-en"><a href="./index-en.html" class="language__link">EN</a></li>
+					</ul>
+			</nav>
+			<div class="fixed--mobile">
+				<i class="far fa-lightbulb header__icon icon bulb"></i>
+				<i class="fas fa-bars icon"></i>
+			</div>
+		</div>
+	</header>
+	<!-- end of header -->
+
+	<main class="main" id="home">
+
+	<!-- fold section -->
+	<section class="fold">
+		<div class="fold__text">
+			<h1><span class="orange">Frontend</span>land</h1>
+			<button class="button button--fold">Skontaktuj się!</button>
+		</div>
+		<div class="circle__wrapper">
+			<div class="circle">
+				<div class="small-circle">
+					<img class="coding-icon" src="assets/icons/planets/coding.svg" alt="">
+				</div>
+					<img class="development-icon" src="assets/icons/planets/development.svg" alt="">
+					<img class="flowchart-icon" src="assets/icons/planets/flowchart.svg" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- end of fold section -->
+
+	<!-- portfolio section -->
+	<section id="portfolio">
+		<h2 class="section__title">ZREALIZOWANE<span class="orange"> PROJEKTY</span></h2>
+
+		<div class="portfolio-project">
+			<div class="portfolio-project-inner">
+				<img class="mockup mockup1" src="assets/mockups/healthy-habits.svg" alt="projekt strony Healthy Habits na różnych urządzeniach">
+				<aside class="portfolio-details">
+					<h4 class="website-title">HEALTY HABITS</h4>
+					<div class="portfolio-project__text">
+						<div class="column column1">
+							<p class="website-subtitle">PROJEKT STRONY</p>
+							<p>Projekt strony promującej zdrowy tryb życia i aktywność fizyczną.</p>
+							<p class="date">data wykonania: 01.2019</p>
+							<div class="web-ref">
+								<i class="fas fa-laptop icon-web icon"></i>
+								<a href="https://healthy-habits.netlify.com/" target="_blank" class="code button" role="button">zobacz stronę</a>
+							</div>
+						</div>
+						<div class="column column2">
+							<p class="website-tech">TECHNOLOGIE</p>
+							<ul class="tech__list">
+								<li>HTML5</li>
+								<li>CSS</li>
+								<li>Gulp</li>
+								<li>Flexbox</li>
+								<li>Adobe XD</li>
+							</ul>
+							<div class="code-ref">
+								<i class="fab fa-github github-portfolio icon"></i>
+								<a href="https://github.com/Moniaesz/healty-habits-website-project" target="_blank" class="code button" role="button">kod źródłowy</a>
+<!--                                <button class="code">kod źródłowy</button> -->
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+
+		<div class="portfolio-project odd-project">
+			<div class="portfolio-project-inner">
+				<img class="mockup mockup2 odd" src="assets/mockups/wedding-craft.svg" alt="projekt strony Wedding Craft na różnych urządzeniach">
+				<aside class="portfolio-details">
+					<h4 class="website-title">WEDDING CRAFT</h4>
+					<div class="portfolio-project__text">
+						<div class="column column1">
+								<p class="website-subtitle">PROJEKT STRONY</p>
+								<p>Projekt strony dla organizatorów przyjęć weselnych.</p>
+								<p class="date">data wykonania: 12.2018</p>
+							<div class="web-ref">
+								<i class="fas fa-laptop icon-web icon"></i>
+								<a href="https://wedding-craft.netlify.com/" target="_blank" class="code button" role="button">zobacz stronę</a>
+							</div>
+						</div>
+						<div class="column column2">
+							<p class="website-tech">TECHNOLOGIE</p>
+							<ul class="tech__list">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>ScrollReveal.js</li>
+								<li>Flexbox</li>
+								<li>CSS Grid</li>
+								<li>Adobe XD</li>
+							</ul>
+							<div class="code-ref">
+								<i class="fab fa-github github-portfolio icon"></i>
+								<a href="https://github.com/Moniaesz/wedding-website-project" target="_blank" class="code button" role="button">kod źródłowy</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+
+		<div class="portfolio-project">
+			<div class="portfolio-project-inner">
+				<img class="mockup mockup3" src="assets/mockups/sunpower.svg" alt="projekt strony Sunpower Photovoltaic na różnych urządzeniach">
+				<aside class="portfolio-details">
+					<h4 class="website-title">SUNPOWER PHOTOVALTAIC</h4>
+					<div class="portfolio-project__text">
+						<div class="column column1">
+								<p class="website-subtitle">STRONA FIRMOWA</p>
+								<p>Strona firmy z branży Odnawialnych Źródeł Energii. </p>
+								<p class="date">data wykonania: 10.2018</p>
+							<div class="web-ref">
+								<i class="fas fa-laptop icon-web icon"></i>
+								<a href="https://sunpowerpv.pl/" target="_blank" class="code button" role="button">zobacz stronę</a>
+							</div>
+						</div>
+						<div class="column column2">
+							<p class="website-tech">TECHNOLOGIE</p>
+							<ul class="tech__list">
+								<li>HTML5</li>
+								<li>CSS</li>
+								<li>RWD</li>
+								<li>CSS Grid</li>
+								<li>Flexbox</li>
+								<li>Adobe XD</li>
+							</ul>
+							<div class="code-ref">
+								<i class="fab fa-github github-portfolio icon"></i>
+								<a href="https://github.com/Moniaesz/renewable-energy-website" target="_blank" class="code button" role="button">kod źródłowy</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+
+		<div class="portfolio-project odd-project">
+			<div class="portfolio-project-inner">
+				<img class="mockup mockup2 odd" src="assets/mockups/zielona-staroleka.svg" alt="projekt strony Zielona Starołęka na różnych urządzeniach">
+				<aside class="portfolio-details">
+					<h4 class="website-title">ZIELONA STAROŁĘKA</h4>
+					<div class="portfolio-project__text">
+						<div class="column column1">
+								<p class="website-subtitle">STRONA WIZYTÓWKA</p>
+								<p>Strona Stowarzyszenia walczącego o zachowanie zieleni w Poznaniu.</p>
+								<p class="date">data wykonania: 09.2018</p>
+							<div class="web-ref">
+								<i class="fas fa-laptop icon-web icon"></i>
+								<a href="https://zielona-staroleka.pl/" target="_blank" class="code button" role="button">zobacz stronę</a>
+							</div>
+						</div>
+						<div class="column column2">
+							<p class="website-tech">TECHNOLOGIE</p>
+							<ul class="tech__list">
+								<li>HTML5</li>
+								<li>CSS</li>
+								<li>RWD</li>
+								<li>CSS Grid</li>
+								<li>Adobe XD</li>
+							</ul>
+							<div class="code-ref">
+								<i class="fab fa-github github-portfolio icon"></i>
+								<a href="https://github.com/Moniaesz/ngo-website" target="_blank" class="code button" role="button">kod źródłowy</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+
+		<div class="portfolio-project">
+			<div class="portfolio-project-inner">
+				<img class="mockup mockup3" src="assets/mockups/kancelaria-szypowicz.svg" alt="projekt strony Kancelaria Doaradcy Podatkowego na różnych urządzeniach">
+				<aside class="portfolio-details">
+					<h4 class="website-title">KANCELARIA DORADCY PODATKOWEGO</h4>
+					<div class="portfolio-project__text">
+						<div class="column column1">
+								<p class="website-subtitle">STRONA WIZYTÓWKA</p>
+								<p>Strona firmowa Kancelarii Doradcy Podatkowego.</p>
+								<p class="date">data wykonania: 08.2018</p>
+							<div class="web-ref">
+								<i class="fas fa-laptop icon-web icon"></i>
+								<a href="https://kancelaria-szypowicz.pl/" target="_blank" class="code button" role="button">zobacz stronę</a>
+							</div>
+						</div>
+						<div class="column column2">
+							<p class="website-tech">TECHNOLOGIE</p>
+							<ul class="tech__list">
+								<li>HTML5</li>
+								<li>CSS</li>
+								<li>RWD</li>
+								<li>Flexbox</li>
+							</ul>
+							<div class="code-ref">
+								<i class="fab fa-github github-portfolio icon"></i>
+								<a href="https://github.com/Moniaesz/website-tax-advisory-company" target="_blank" class="code button" role="button">kod źródłowy</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+
+	</section>
+	<!-- end of portfolio section -->
+
+
+		<!-- toolkit section -->
+	<section id="toolkit">
+		<h2 class="section__title">MOJE<span class="orange"> UMIEJĘTNOŚCI</span></h2>
+		
+		<div class="toolkit__wrapper">
+			<div class="tool">
+				<p class="tool__title">JavaScript</p>
+				<img class="tool__logo" src="assets/icons/toolkit/javascript.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">jQuery</p>
+				<img class="tool__logo" src="assets/icons/toolkit/jQuery.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">HTML5</p>
+				<img class="tool__logo" src="assets/icons/toolkit/html5.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">CSS3</p>
+				<img class="tool__logo" src="assets/icons/toolkit/css.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">React</p>
+				<img class="tool__logo" src="assets/icons/toolkit/react.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">Sass</p>
+				<img class="tool__logo" src="assets/icons/toolkit/sass.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">Gulp</p>
+				<img class="tool__logo" src="assets/icons/toolkit/gulp.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">Git</p>
+				<img class="tool__logo" src="assets/icons/toolkit/git.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">RWD</p>
+				<img class="tool__logo" src="assets/icons/toolkit/responsive.svg" alt="">
+			</div>
+
+			<div class="tool">
+				<p class="tool__title">AdobeXD</p>
+				<img class="tool__logo" src="assets/icons/toolkit/adobexd.svg" alt="">
+			</div>
+		</div>
+
+	</section>
+	<!-- end of toolkit section -->
+
+	<!-- about section -->
+	<section id="about">
+		<h2 class="section__title">O<span class="orange"> MNIE</span></h2>
+		<div class="single-course__wrapper">
+			<div class="full-date">
+				<p class="full-date__month">08</p>
+				<p class="full-date__year">2018</p>
+			</div>
+			<div class="tile tile--odd">
+				<h4 class="tile__title">Front End Developer Nanodegree</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eligendi autem neque ad eius esse suscipit, a reprehenderit deserunt cupiditate?</p>
+				<p class="course-type">online, 02.2018 - 08.2018</p>
+			</div>
+		</div>
+
+		<div class="single-course__wrapper reverted">
+			 <div class="full-date full-date__reverted">
+				<p class="full-date__month">01</p>
+				<p class="full-date__year">2018</p>
+			</div>
+			<div class="tile tile--even">
+				<h4 class="tile__title">Google&Udacity Schollarship Challenge</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eligendi autem neque ad eius esse suscipit, a reprehenderit deserunt cupiditate?</p>
+				<p class="course-type">online, 11.2017 - 01.2018</p>
+			</div>
+		</div>
+
+		<div class="single-course__wrapper">
+			<div class="full-date">
+				<p class="full-date__month">11</p>
+				<p class="full-date__year">2017</p>
+			</div>
+			<div class="tile tile--odd">
+				<h4 class="tile__title">Bootcamp Web Design UI/UX/HTML</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eligendi autem neque ad eius esse suscipit, a reprehenderit deserunt cupiditate?</p>
+				<p class="course-type">online, 10-11.2017</p>
+			</div>
+		</div>
+	</section>
+	<!--end of  about section -->
+
+	</main>
+	<!-- end of main -->
+
+<!-- footer -->
+	<footer id="footer">
+		<div class="footer__inner">
+			<div class="footer__company-details">
+				<div class="footer__column company-column">
+					<img class="logo footer__logo" src="assets/logo.svg" alt="frontend land logo">
+					<h3 class="footer__company-name"><span class="orange">Frontend</span>land</h3>
+				</div>
+				<div class="footer__column dev-column">
+					<p class="dev__name">Monika Szypowicz</p>
+					<p class="dev__position"><span class="orange">front-end</span> developer </p>
+				</div>
+				<div class="footer__column social-column">
+					<ul class="footer__icons">
+						<li>
+							<a href="https://github.com/Moniaesz" target="_blank">
+								<i class="fab fa-github icon-github icon"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/monika-szypowicz/" target="_blank">
+								<i class="fab fa-linkedin linkedin--footer icon"></i>
+							</a>
+						</li>
+					</ul>
+					<p class="social__mail">monika@frontend.land</p>
+				</div>
+			</div>
+			<div id="map"></div>
+		</div>
+	</footer>
+	<div class="small-footer"><p>© 2019 frontend.land</p></div>
+<!-- end of footer -->
+
+</body>
+
+</html>
