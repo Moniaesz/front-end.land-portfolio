@@ -1,0 +1,65 @@
+// -------------------------------
+//     PORTFOLIO SECTION
+// -------------------------------
+.portfolio-project {
+	padding: 3rem 0.5rem;
+}
+.portfolio-project-inner {
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	width: 100%;
+	ul {
+		list-style-type: none;
+	}
+}
+.odd-project {
+	background: $light__grey;
+}
+.website-title {
+	color: $base__orange;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	font-weight: 400;
+}
+.website-subtitle, .website-tech {
+	font-weight: 400;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+.portfolio-project__text {
+	display: flex;
+	justify-content: space-around;
+	margin: auto 2rem;
+	flex-wrap: wrap;
+}
+.column {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.code-ref, .web-ref {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.icon-web {
+	font-size: 2.3rem;
+	margin-right: 1rem;
+}
+.github-portfolio {
+	font-size: 2.5rem;
+	margin-right: 1rem
+}
+.icon-web {
+	font-size: 2.2rem;
+}
+.date {
+	font-style: italic;
+}
+.tech__list {
+	position: relative;
+	line-height: 1.5rem;
+}

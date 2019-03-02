@@ -1,0 +1,69 @@
+// -------------------------------
+//     HEADER
+// -------------------------------
+.header {
+	position: fixed;
+	background: #fff;
+	// border: 3px dotted black;
+	z-index: 999;
+}
+.header__inner {
+	position: relative;
+	width: 100vw;
+	// border: 3px solid yellow;
+}
+.header__logo {
+	padding: 1rem;
+}
+.languages {
+	cursor: pointer;
+}
+.language:hover, .language__link:hover {
+	color: $base__orange;
+}
+	.slash {
+		margin-left: 1rem;
+	}
+.fixed--mobile {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+.header__social-icons, .languages {
+	margin-top: 1rem;
+}
+.header__nav {
+	// border: 3px dotted fuchsia;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	line-height: 2rem;
+	margin-top: 2rem;
+	display: none;
+}
+.header__nav.open {
+	display: flex;
+	padding-bottom: 5rem;
+	background: #fff;
+}
+.header__social-icons, .languages {
+	display: flex;
+}
+.header__link {
+	margin-left: 1.3rem;
+	cursor: pointer;
+	transition: $transition;
+	&:hover {
+		color: $base__orange;
+	}
+}
+.header__icon, .language {
+	margin-left: 1rem;
+}
+.fa-bars {
+	margin-left: 2rem;
+	display: block;
+}
