@@ -15,6 +15,25 @@
 		margin-top: 1rem;
 	}
 }
+@media screen and (min-width: 855px) {
+	//about section
+	@supports (display: grid) {
+		.single-course__wrapper {
+			display: grid;
+			grid-template-columns: 1fr 4fr;
+		}
+		.reverted {
+			grid-template-columns: 4fr 1fr;
+		}
+		.full-date__reverted {
+			grid-column: 2/3;
+			grid-row: 1/2; 
+		}
+	}
+	.full-date {
+	flex-direction: column;
+	}
+}
 @media screen and (min-width: 1230px) {
 	//header
 	.header__social-icons, .languages {

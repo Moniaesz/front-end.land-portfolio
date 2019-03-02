@@ -1,0 +1,64 @@
+// -------------------------------
+//     ABOUT SECTION
+// -------------------------------
+#about {
+	max-width: 90vw;
+	margin: 4rem auto auto auto;
+}
+
+// courses
+.single-course__wrapper {
+	max-width: 900px;
+	margin: 2rem auto 1rem auto;
+}
+.full-date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.full-date__month {
+	font-weight: 500;
+	font-size: 5rem;
+}
+.full-date__year {
+	font-size: 2rem;
+	padding: 0.7rem;
+}
+.tile__title {
+	color: $base__orange;
+	font-weight: 400;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+.tile {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	background: $light__grey;
+	padding: 2rem 4rem;
+	position: relative;
+	&::before {
+		content: "";
+		background: $light__orange;
+		height: 30px;
+		width: 60px;
+		position: absolute;
+		top: 4rem;
+		display: inline;
+	}
+}
+.tile--odd {
+	&::before {
+		left: -15px;
+	}
+}
+.tile--even {
+	&::before {
+		right: -15px;
+	}
+}
+.course-type {
+	font-style: italic;
+	margin-top: 1rem;
+}
