@@ -78,6 +78,28 @@ a {
     background: #E18712;
     color: white; }
 
+body.dark {
+  background: #191717; }
+  body.dark .header {
+    background: #191717; }
+  body.dark ul, body.dark li, body.dark i, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark p, body.dark button, body.dark a {
+    color: #fff; }
+  body.dark .header__nav.open {
+    background: #191717; }
+  body.dark .website-title {
+    color: #E18712; }
+  body.dark .tile {
+    background: #1d1e22; }
+  body.dark .tile__title {
+    color: #E18712;
+    margin-bottom: 1.3rem; }
+  body.dark .odd-project, body.dark #toolkit {
+    background: #252527; }
+  body.dark .tool__title {
+    color: #E18712; }
+  body.dark .small-footer {
+    background: #252527; }
+
 .header {
   position: fixed;
   background: #fff;
@@ -175,7 +197,8 @@ a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .code-ref, .web-ref {
   margin-top: 1rem;
@@ -235,6 +258,46 @@ a {
     width: 10rem; }
   .tool__logo {
     margin-bottom: 2rem; } }
+
+@media screen and (max-width: 580px) {
+  .column {
+    width: 100%;
+    text-align: center;
+    align-items: center; }
+  .website-tech {
+    margin-top: 1rem; }
+  .date {
+    margin-top: 1rem; } }
+
+@media screen and (min-width: 1230px) {
+  .header__social-icons, .languages {
+    margin-top: 0; }
+  .header__social-icons {
+    margin-left: 5rem; }
+  .header__nav, .header__list {
+    display: flex;
+    flex-direction: row; }
+  .header__nav {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: flex-start; }
+  .header__inner {
+    display: flex; }
+  .fa-bars {
+    display: none !important; }
+  .column1 {
+    width: 55%; }
+  .mockup {
+    max-width: 95%;
+    height: 20rem; }
+  .portfolio-project-inner {
+    max-width: 1400px;
+    display: flex; }
+    .portfolio-project-inner:not(:last-child) {
+      margin-bottom: 3rem; }
+  .odd {
+    order: 1; } }
 
 @media screen and (max-width: 580px) {
   .column {
