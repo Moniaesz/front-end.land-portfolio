@@ -1,0 +1,22 @@
+
+// -------------------------------
+//     FOLD SECTION
+// -------------------------------
+.fold {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0rem auto;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 15rem;
+	padding-bottom: 10rem;
+}
+.fold__text {
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.button--fold {
+	width: 11rem;
+	margin-top: 1.5rem;
+}
