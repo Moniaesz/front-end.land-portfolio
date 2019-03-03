@@ -4,13 +4,11 @@
 .header {
 	position: fixed;
 	background: #fff;
-	// border: 3px dotted black;
 	z-index: 999;
 }
 .header__inner {
 	position: relative;
 	width: 100vw;
-	// border: 3px solid yellow;
 }
 .header__logo {
 	padding: 1rem;
@@ -33,7 +31,6 @@
 	margin-top: 1rem;
 }
 .header__nav {
-	// border: 3px dotted fuchsia;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
