@@ -37,6 +37,7 @@
 	margin-left: 1.3rem;
 }
 .social-column, .dev-column {
+	line-height: 1.7rem;
 	&:after {
 	content: "";
 	height: 60px;
@@ -44,6 +45,11 @@
 	background: $light__orange;
 	position: absolute;
 	left: 10px;
+	}
+}
+.footer__company-details {
+	p {
+		font-size: 1.1rem;
 	}
 }
 .dev__position {

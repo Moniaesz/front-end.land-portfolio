@@ -61,6 +61,9 @@ a {
 .orange {
   color: #E18712; }
 
+.bold {
+  font-weight: 600; }
+
 .main {
   text-align: center; }
 
@@ -135,13 +138,18 @@ body.dark {
 .linkedin--footer {
   margin-left: 1.3rem; }
 
-.social-column:after, .dev-column:after {
-  content: "";
-  height: 60px;
-  width: 2px;
-  background: #F6B229;
-  position: absolute;
-  left: 10px; }
+.social-column, .dev-column {
+  line-height: 1.7rem; }
+  .social-column:after, .dev-column:after {
+    content: "";
+    height: 60px;
+    width: 2px;
+    background: #F6B229;
+    position: absolute;
+    left: 10px; }
+
+.footer__company-details p {
+  font-size: 1.1rem; }
 
 .dev__position {
   font-weight: 400; }
@@ -257,7 +265,8 @@ body.dark {
   align-content: flex-start;
   background: #f2f2f2;
   padding: 2rem 4rem;
-  position: relative; }
+  position: relative;
+  line-height: 1.6rem; }
   .tile::before {
     content: "";
     background: #F6B229;
@@ -312,7 +321,7 @@ body.dark {
 .website-title {
   color: #E18712;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-weight: 400; }
 
 .website-subtitle, .website-tech {
@@ -364,6 +373,9 @@ body.dark {
 
 .tool__logo {
   height: 5.5rem; }
+
+.toolkit__title {
+  margin-bottom: 4rem; }
 
 .tool__title {
   font-size: 1.4rem;
@@ -420,6 +432,8 @@ body.dark {
     flex-direction: column; } }
 
 @media screen and (min-width: 1230px) {
+  .language__link, .language, .header__link {
+    font-size: 1.2rem; }
   .header__social-icons, .languages {
     margin-top: 0; }
   .header__social-icons {

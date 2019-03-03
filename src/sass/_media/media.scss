@@ -41,6 +41,9 @@
 }
 @media screen and (min-width: 1230px) {
 	//header
+	.language__link, .language, .header__link {
+		font-size: 1.2rem;
+	}
 	.header__social-icons, .languages {
 		margin-top: 0;
 	}
