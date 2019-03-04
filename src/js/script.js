@@ -42,4 +42,10 @@ L.marker([52.423820, 16.91996], {icon: mapIcon}).addTo(map);
 		nav.classList.toggle('open');
 	});
 
+	nav.addEventListener('click', function(event) {
+		if(event.target.tagName.toLowerCase() === 'a') {
+			nav.classList.toggle('open');
+		}
+	});
+
 });
