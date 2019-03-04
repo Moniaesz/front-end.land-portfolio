@@ -38,6 +38,13 @@
 	.full-date {
 	flex-direction: column;
 	}
+	//about me
+	.about__tiles {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 3rem;
+		max-width: 1150px;
+	}
 }
 @media screen and (min-width: 1230px) {
 	//header

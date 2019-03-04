@@ -235,6 +235,53 @@ body.dark {
   max-width: 90vw;
   margin: 4rem auto auto auto; }
 
+.about-me__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.monika__img {
+  background-image: url("../assets/monika-img.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  margin-top: 2rem; }
+
+.about__tile {
+  margin: 2rem auto;
+  border-radius: 10px; }
+
+.about__tile--one {
+  border: 2px solid #E18712; }
+  .about__tile--one h4 {
+    background: #E18712; }
+
+.about__tile--two {
+  border: 2px solid #252527; }
+  .about__tile--two h4 {
+    background: #252527; }
+
+.about__tile--three {
+  border: 2px solid #4A4A4A; }
+  .about__tile--three h4 {
+    background: #4A4A4A; }
+
+.about__tile__title {
+  background: #E18712;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem; }
+
+.about__tile__text {
+  line-height: 1.7rem;
+  padding: 1rem; }
+
+.blog__link {
+  font-weight: 600;
+  color: #E18712; }
+
 .single-course__wrapper {
   max-width: 900px;
   margin: 2rem auto 1rem auto; }
@@ -429,7 +476,12 @@ body.dark {
       grid-column: 2/3;
       grid-row: 1/2; } }
   .full-date {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .about__tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    max-width: 1150px; } }
 
 @media screen and (min-width: 1230px) {
   .language__link, .language, .header__link {
