@@ -19,15 +19,18 @@ L.marker([52.423820, 16.91996], {icon: mapIcon}).addTo(map);
 	const bulb = document.querySelector('.bulb');
 	const logo = document.querySelector('.logo');
 	const footerLogo = document.querySelector('.footer__logo');
+	const fold = document.querySelector('.fold');
 
 	bulb.addEventListener('click', function() {
 		body.classList.toggle('dark');
 		if (body.classList.contains('dark')) {
 			logo.src = 'assets/logo-black.svg';
 			footerLogo.src = 'assets/logo-black.svg';
+			fold.style.backgroundImage = "url('../assets/city-dark.jpg')";
 		} else {
 			logo.src = 'assets/logo.svg';
 			footerLogo.src = 'assets/logo.svg';
+			fold.style.backgroundImage = "url('../assets/city.jpg')";
 		}
 	});
 

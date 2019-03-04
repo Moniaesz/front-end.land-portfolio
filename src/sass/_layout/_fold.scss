@@ -8,11 +8,16 @@
 	margin: 0rem auto;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 15rem;
+	padding-top: 10rem;
 	padding-bottom: 10rem;
+	height: 60vh;
+	background-image: url("../assets/city.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .fold__text {
-	margin-left: 2rem;
+	margin-top: -15rem;
 	display: flex;
 	flex-direction: column;
 }
