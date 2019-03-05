@@ -157,7 +157,7 @@ body.dark {
 .small-footer {
   display: flex;
   justify-content: center;
-  background: #f2f2f2;
+  background: #fbfbfb;
   padding: 1rem; }
   .small-footer p {
     font-size: 0.9rem; }
@@ -230,6 +230,74 @@ body.dark {
 .fa-bars {
   margin-left: 2rem;
   display: block; }
+
+@media screen and (max-width: 580px) {
+  .column {
+    width: 100%;
+    text-align: center;
+    align-items: center; }
+  .website-tech {
+    margin-top: 1rem; }
+  .date {
+    margin-top: 1rem; } }
+
+@media screen and (max-width: 816px) {
+  #map {
+    width: 80%; } }
+
+@media screen and (min-width: 855px) {
+  @supports (display: grid) {
+    .single-course__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 4fr; }
+    .reverted {
+      grid-template-columns: 4fr 1fr; }
+    .full-date__reverted {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+  .full-date {
+    flex-direction: column; }
+  .about__tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    max-width: 1150px; } }
+
+@media screen and (min-width: 1230px) {
+  .language__link, .language, .header__link {
+    font-size: 1.2rem; }
+  .header__social-icons, .languages {
+    margin-top: 0; }
+  .header__social-icons {
+    margin-left: 5rem; }
+  .header__nav, .header__list {
+    display: flex;
+    flex-direction: row; }
+  .header__nav {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: flex-start; }
+  .header__inner {
+    display: flex; }
+  .header__logo {
+    margin-left: 3rem; }
+  .bulb {
+    margin-right: 3rem; }
+  .fa-bars {
+    display: none !important; }
+  .column1 {
+    width: 55%; }
+  .mockup {
+    max-width: 95%;
+    height: 20rem; }
+  .portfolio-project-inner {
+    max-width: 1400px;
+    display: flex; }
+    .portfolio-project-inner:not(:last-child) {
+      margin-bottom: 3rem; }
+  .odd {
+    order: 1; } }
 
 #about {
   max-width: 90vw;
@@ -310,7 +378,7 @@ body.dark {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  background: #f2f2f2;
+  background: #fbfbfb;
   padding: 2rem 4rem;
   position: relative;
   line-height: 1.6rem; }
@@ -371,7 +439,7 @@ body.dark {
     list-style-type: none; }
 
 .odd-project {
-  background: #f2f2f2; }
+  background: #fbfbfb; }
 
 .website-title {
   color: #E18712;
@@ -422,7 +490,7 @@ body.dark {
   line-height: 1.5rem; }
 
 #toolkit {
-  background: #f2f2f2;
+  background: #fbfbfb;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -458,71 +526,3 @@ body.dark {
     width: 10rem; }
   .tool__logo {
     margin-bottom: 2rem; } }
-
-@media screen and (max-width: 580px) {
-  .column {
-    width: 100%;
-    text-align: center;
-    align-items: center; }
-  .website-tech {
-    margin-top: 1rem; }
-  .date {
-    margin-top: 1rem; } }
-
-@media screen and (max-width: 816px) {
-  #map {
-    width: 80%; } }
-
-@media screen and (min-width: 855px) {
-  @supports (display: grid) {
-    .single-course__wrapper {
-      display: grid;
-      grid-template-columns: 1fr 4fr; }
-    .reverted {
-      grid-template-columns: 4fr 1fr; }
-    .full-date__reverted {
-      grid-column: 2/3;
-      grid-row: 1/2; } }
-  .full-date {
-    flex-direction: column; }
-  .about__tiles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-    max-width: 1150px; } }
-
-@media screen and (min-width: 1230px) {
-  .language__link, .language, .header__link {
-    font-size: 1.2rem; }
-  .header__social-icons, .languages {
-    margin-top: 0; }
-  .header__social-icons {
-    margin-left: 5rem; }
-  .header__nav, .header__list {
-    display: flex;
-    flex-direction: row; }
-  .header__nav {
-    display: flex;
-    width: 80vw;
-    justify-content: space-evenly;
-    align-items: flex-start; }
-  .header__inner {
-    display: flex; }
-  .header__logo {
-    margin-left: 3rem; }
-  .bulb {
-    margin-right: 3rem; }
-  .fa-bars {
-    display: none !important; }
-  .column1 {
-    width: 55%; }
-  .mockup {
-    max-width: 95%;
-    height: 20rem; }
-  .portfolio-project-inner {
-    max-width: 1400px;
-    display: flex; }
-    .portfolio-project-inner:not(:last-child) {
-      margin-bottom: 3rem; }
-  .odd {
-    order: 1; } }
