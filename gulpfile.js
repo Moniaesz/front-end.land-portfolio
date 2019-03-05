@@ -7,6 +7,7 @@ const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const gutil = require('gulp-util');
 const terser = require('gulp-terser');
+const imagemin = require('gulp-imagemin');
 
 
 gulp.task('sass', function() {
