@@ -5,6 +5,7 @@
 	position: fixed;
 	background: #fff;
 	z-index: 999;
+	transition: $transition;
 }
 .header__inner {
 	position: relative;
@@ -12,6 +13,7 @@
 }
 .header__logo {
 	padding: 1rem;
+	transition: $transition;
 }
 .languages {
 	cursor: pointer;
@@ -38,7 +40,6 @@
 	align-content: center;
 	text-align: center;
 	line-height: 2rem;
-	margin-top: 2rem;
 	display: none;
 }
 .header__nav.open {
@@ -63,4 +64,10 @@
 .fa-bars {
 	margin-left: 2rem;
 	display: block;
+}
+//animate on scroll
+header.scroll {
+	.header__logo {
+		height: 4rem;
+	}
 }

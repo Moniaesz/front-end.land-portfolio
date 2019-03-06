@@ -48,4 +48,19 @@ L.marker([52.423820, 16.91996], {icon: mapIcon}).addTo(map);
 		}
 	});
 
+//header animation on scroll
+	const header = document.querySelector('header');
+
+	function pageScroll() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			header.classList.add('scroll');
+		} else {
+			header.classList.remove('scroll');
+		}
+	}
+
+	window.onscroll = function() {
+		pageScroll()
+	}
+
 });
