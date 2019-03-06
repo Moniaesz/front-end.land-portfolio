@@ -31,6 +31,12 @@ gulp.task('js', function() {
 	.pipe(gulp.dest('dist/js/'));
 });
 
+gulp.task('images', function() {
+	gulp.src('src/assets/**/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('dist/assets/'));
+})
+
 gulp.task('serve', function() {
 
 	browserSync.init({
@@ -66,7 +72,7 @@ gulp.task('copy', function() {
 
 gulp.task('build', function(callback) {
 
-	runSequence('clean', 'css', 'js', 'copy', callback);
+	runSequence('clean', 'images', 'css', 'js', 'copy', callback);
 
 });
 
