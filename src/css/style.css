@@ -374,6 +374,9 @@ header.scroll .header__logo {
   .portfolio-project-inner ul {
     list-style-type: none; }
 
+.mockup {
+  width: 80%; }
+
 .odd-project {
   background: #fbfbfb; }
 
@@ -524,6 +527,7 @@ header.scroll .header__logo {
     width: 55%; }
   .mockup {
     max-width: 95%;
+    width: auto;
     height: 20rem; }
   .portfolio-project-inner {
     max-width: 1400px;
