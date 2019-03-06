@@ -172,8 +172,7 @@ body.dark {
 .header {
   position: fixed;
   background: #fff;
-  z-index: 999;
-  transition: 0.3s ease-in-out; }
+  z-index: 999; }
 
 .header__inner {
   position: relative;
@@ -361,7 +360,8 @@ header.scroll .header__logo {
   margin-top: 1.5rem; }
 
 .portfolio__title {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  margin-bottom: 3rem; }
 
 .portfolio-project {
   padding: 3rem 0.5rem; }
