@@ -46,6 +46,13 @@
 		max-width: 1150px;
 	}
 }
+@media screen and (max-width: 1229px) {
+	.header__nav.open {
+		display: flex;
+		padding-bottom: 5rem;
+		background: #fff;
+	}
+}
 @media screen and (min-width: 1230px) {
 	//header
 	header.scroll {

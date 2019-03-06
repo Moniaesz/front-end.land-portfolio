@@ -209,11 +209,6 @@ body.dark {
   line-height: 2rem;
   display: none; }
 
-.header__nav.open {
-  display: flex;
-  padding-bottom: 5rem;
-  background: #fff; }
-
 .header__social-icons, .languages {
   display: flex; }
 
@@ -497,6 +492,12 @@ header.scroll .header__logo {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     max-width: 1150px; } }
+
+@media screen and (max-width: 1229px) {
+  .header__nav.open {
+    display: flex;
+    padding-bottom: 5rem;
+    background: #fff; } }
 
 @media screen and (min-width: 1230px) {
   header.scroll .bulb {
