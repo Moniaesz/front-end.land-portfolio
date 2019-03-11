@@ -160,7 +160,7 @@ body.dark {
 .small-footer {
   display: flex;
   justify-content: center;
-  background: #fbfbfb;
+  background: #f6f5f5;
   padding: 1rem; }
   .small-footer p {
     font-size: 0.9rem; }
@@ -311,7 +311,7 @@ header.scroll .header__logo {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  background: #fbfbfb;
+  background: #f6f5f5;
   padding: 2rem 4rem;
   position: relative;
   line-height: 1.6rem; }
@@ -376,7 +376,7 @@ header.scroll .header__logo {
   width: 80%; }
 
 .odd-project {
-  background: #fbfbfb; }
+  background: #f6f5f5; }
 
 .website-title {
   color: #E18712;
@@ -427,7 +427,7 @@ header.scroll .header__logo {
   line-height: 1.5rem; }
 
 #toolkit {
-  background: #fbfbfb;
+  background: #f6f5f5;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
