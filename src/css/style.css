@@ -266,9 +266,9 @@ body.dark {
   transform: rotate(-45deg);
   top: 35%; }
 
-.menu.open
 header.scroll .header__logo {
-  height: 4rem; }
+  height: 4rem;
+  margin-top: 0.5rem; }
 
 #about {
   max-width: 90vw;
@@ -550,6 +550,8 @@ header.scroll .header__logo {
       margin-bottom: 0.5rem; } }
 
 @media screen and (min-width: 1230px) {
+  .header.scroll .bulb {
+    margin-top: -0.7rem; }
   .language__link, .language, .header__link {
     font-size: 1.2rem; }
   .header__social-icons, .languages {
