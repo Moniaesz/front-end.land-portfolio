@@ -35,16 +35,18 @@ L.marker([52.423820, 16.91996], {icon: mapIcon}).addTo(map);
 	});
 
 // mobile navigation
-	const menu = document.querySelector('.fa-bars');
+	const menu = document.querySelector('.menu');
 	const nav = document.querySelector('.header__nav');
 
 	menu.addEventListener('click', function() {
 		nav.classList.toggle('open');
+		menu.classList.toggle('open');
 	});
 
 	nav.addEventListener('click', function(event) {
 		if(event.target.tagName.toLowerCase() === 'a') {
 			nav.classList.toggle('open');
+			menu.classList.toggle('open')
 		}
 	});
 

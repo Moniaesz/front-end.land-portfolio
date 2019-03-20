@@ -28,6 +28,8 @@
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
+	display: flex;
+	align-items: flex-start;
 }
 .header__social-icons, .languages {
 	margin-top: 1rem;
@@ -56,10 +58,47 @@
 .header__icon, .language {
 	margin-left: 1rem;
 }
-.fa-bars {
-	margin-left: 2rem;
-	display: block;
+.menu {
+  width: 50px;
+  height: 60px;
+  position: relative;
+  margin-left: 1.5rem;
 }
+.line {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: $medium__grey;
+  transition: 0.2s ease-in-out;
+}
+.one {
+  top: 5%;
+}
+.two {
+  top: 35%;
+  transition: .3s ease-in-out;
+}
+.three {
+  top: 65%;
+}
+.menu.open {
+	.line {
+		background: $base__orange;
+	}
+	.one {
+	  transform:rotate(45deg);
+	  top: 35%;
+	}
+	.two {
+	  background: transparent;
+	}
+	.three {
+	  transform:rotate(-45deg);
+	  top: 35%;
+	}
+}
+
+.menu.open 
 //animate on scroll
 header.scroll {
 	.header__logo {
