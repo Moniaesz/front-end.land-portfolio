@@ -50,7 +50,19 @@
 	.header__nav.open {
 		display: flex;
 		padding-bottom: 5rem;
+		padding-top: 2rem;
 		background: #fff;
+		.header__link, .language-pl {
+			margin-left: 0;
+		}
+		.header__social-icons {
+			margin-left: -1rem;
+		}
+		.header__item:last-child {
+			border-bottom: 2px solid rgba(225, 135, 18, 0.5);
+			padding-bottom: 1rem;
+			margin-bottom: 0.5rem;
+		}
 	}
 }
 @media screen and (min-width: 1230px) {
