@@ -88,6 +88,8 @@ body.dark {
   background: #191717; }
   body.dark .header {
     background: #191717; }
+  body.dark .line {
+    background: #fff; }
   body.dark ul, body.dark li, body.dark i, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark p, body.dark button, body.dark a {
     color: #fff; }
   body.dark .header__nav.open {
@@ -548,8 +550,6 @@ header.scroll .header__logo {
       margin-bottom: 0.5rem; } }
 
 @media screen and (min-width: 1230px) {
-  header.scroll .bulb {
-    margin-top: -0.5rem; }
   .language__link, .language, .header__link {
     font-size: 1.2rem; }
   .header__social-icons, .languages {
