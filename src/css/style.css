@@ -551,7 +551,7 @@ header.scroll .header__logo {
 
 @media screen and (min-width: 1230px) {
   .header.scroll .bulb {
-    margin-top: -0.7rem; }
+    margin-top: -0.3rem; }
   .language__link, .language, .header__link {
     font-size: 1.2rem; }
   .header__social-icons, .languages {
