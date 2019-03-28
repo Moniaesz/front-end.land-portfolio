@@ -47,9 +47,22 @@
 	}
 }
 @media screen and (max-width: 1229px) {
+	.header.scroll {
+		.header__logo {
+			height: 3rem;
+			padding-boom: 0.3rem;
+		}
+		.fixed--mobile {
+			top: 1rem;
+		}
+	}
+	.header__logo {
+		height: 4rem;
+		margin: 0.3rem auto auto 1rem;
+	}
 	.header__nav.open {
 		display: flex;
-		padding-bottom: 5rem;
+		padding-bottom: 3rem;
 		padding-top: 2rem;
 		background: #fff;
 		.header__link, .language-pl {
@@ -68,6 +81,9 @@
 @media screen and (min-width: 1230px) {
 	//header
 	.header.scroll {
+		.header__logo {
+			height: 4rem;
+		}
 		.bulb {
 			margin-top: -0.3rem;
 		}
