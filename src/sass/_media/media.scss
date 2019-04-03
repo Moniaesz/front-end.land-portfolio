@@ -2,7 +2,16 @@
 // //     MEDIA QUERIES
 // // -------------------------------
 @media screen and (max-width: 580px) {
+	h1 {
+		font-size: 2rem;
+	}
+	.about__tile__text {
+		font-size: 0.9rem;
+	}
 	// portfolio section
+	.section__title {
+		font-size: 1.7rem;
+	}
 	.column {
 		width: 100%;
 		text-align: center;
@@ -32,7 +41,7 @@
 		}
 		.full-date__reverted {
 			grid-column: 2/3;
-			grid-row: 1/2; 
+			grid-row: 1/2;
 		}
 	}
 	.full-date {
@@ -40,10 +49,11 @@
 	}
 	//about me
 	.about__tiles {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 3rem;
-		max-width: 1150px;
+		display: flex;
+		max-width: 1200px;
+	}
+	.about__tile {
+		width: 30%;
 	}
 }
 @media screen and (max-width: 1229px) {
@@ -121,7 +131,7 @@
 	}
 	// portfolio section
 	.column1 {
-		width: 55%; 
+		width: 55%;
 	}
 	.mockup {
 		max-width: 95%;

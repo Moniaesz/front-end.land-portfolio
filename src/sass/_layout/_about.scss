@@ -2,10 +2,8 @@
 //     ABOUT SECTION
 // -------------------------------
 #about {
-	max-width: 90vw;
-	margin: 4rem auto auto auto;
+	margin: 4rem 1rem auto 1rem;
 }
-
 //about me
 .about-me__wrapper {
 	display: flex;
@@ -24,6 +22,10 @@
 .about__tile {
 	margin: 2rem auto;
 	border-radius: 10px;
+	h4 {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
 }
 .about__tile--one {
 	border: 2px solid $base__orange;
@@ -50,6 +52,7 @@
 	padding: 1rem;
 }
 .about__tile__text {
+	font-size: 1rem;
 	line-height: 1.7rem;
 	padding: 1rem;
 }
@@ -57,7 +60,6 @@
 	font-weight: 600;
 	color: $base__orange;
 }
-
 // courses
 .single-course__wrapper {
 	max-width: 900px;
