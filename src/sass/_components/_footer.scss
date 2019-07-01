@@ -23,6 +23,12 @@
 .footer__icons {
 	display: flex;
 }
+.linkedin--footer, .github--footer {
+	transition: $transition;
+	&:hover {
+		color: $base__orange;
+	}
+}
 .footer__column {
 	margin-top: 2rem;
 }

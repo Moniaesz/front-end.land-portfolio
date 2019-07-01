@@ -43,11 +43,7 @@ a {
 .icon {
   height: 2.5rem;
   font-size: 2.5rem;
-  color: #4A4A4A;
-  cursor: pointer;
-  transition: 0.3s ease-in-out; }
-  .icon:hover {
-    color: #E18712; }
+  color: #4A4A4A; }
 
 .section__title {
   margin: 1rem 2rem;
@@ -436,6 +432,11 @@ template {
 .footer__icons {
   display: flex; }
 
+.linkedin--footer, .github--footer {
+  transition: 0.3s ease-in-out; }
+  .linkedin--footer:hover, .github--footer:hover {
+    color: #E18712; }
+
 .footer__column {
   margin-top: 2rem; }
 
@@ -532,6 +533,11 @@ template {
   cursor: pointer;
   transition: 0.3s ease-in-out; }
   .header__link:hover {
+    color: #E18712; }
+
+.header__icon {
+  transition: 0.3s ease-in-out; }
+  .header__icon:hover {
     color: #E18712; }
 
 .header__icon, .language {

@@ -56,6 +56,12 @@
 		color: $base__orange;
 	}
 }
+.header__icon {
+	transition: $transition;
+	&:hover {
+		color: $base__orange;
+	}
+}
 .header__icon, .language {
 	margin-left: 1rem;
 }
