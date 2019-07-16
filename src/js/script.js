@@ -21,7 +21,7 @@ L.marker([52.423820, 16.91996], {icon: mapIcon}).addTo(map);
 	const footerLogo = document.querySelector('.footer__logo');
 	const fold = document.querySelector('.fold');
 
-	bulb.addEventListener('click', function() {
+	function changeColorMode() {
 		body.classList.toggle('dark');
 		if (body.classList.contains('dark')) {
 			logo.src = 'assets/logo-black.svg';
@@ -32,7 +32,10 @@ L.marker([52.423820, 16.91996], {icon: mapIcon}).addTo(map);
 			footerLogo.src = 'assets/logo.svg';
 			fold.style.backgroundImage = "url('../assets/city.jpg')";
 		}
-	});
+	}
+
+	bulb.addEventListener('click', changeColorMode);
+	bulb.addEventListener('keypress', changeColorMode);
 
 // mobile navigation
 	const menu = document.querySelector('.menu');
