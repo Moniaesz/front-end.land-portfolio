@@ -89,6 +89,8 @@ body.dark {
     background: #fff; }
   body.dark ul, body.dark li, body.dark i, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark p, body.dark button, body.dark a {
     color: #fff; }
+  body.dark .about__link {
+    color: #F6B229; }
   body.dark .header__nav.open {
     background: #191717; }
   body.dark .website-title {
@@ -630,7 +632,7 @@ template {
   line-height: 1.7rem;
   padding: 1rem; }
 
-.blog__link {
+.about__link {
   font-weight: 600;
   color: #E18712; }
 
