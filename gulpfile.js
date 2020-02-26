@@ -9,7 +9,6 @@ const gutil = require('gulp-util');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 
-
 gulp.task('sass', function() {
 	return gulp.src('src/sass/**/*.scss')
 		.pipe(concat('style.css'))
@@ -32,18 +31,15 @@ gulp.task('js', function() {
 });
 
 gulp.task('images', function() {
-	gulp.src('src/assets/**/*')
+	return gulp.src('src/assets/**/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/assets/'));
 })
 
 gulp.task('serve', function() {
-
 	browserSync.init({
-
 		server: 'dist/'
 	});
-
 });
 
 gulp.task('watch', function() {
@@ -55,26 +51,20 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function() {
-
 	return del('dist/');
-
 });
 
 //copy remaining files
 gulp.task('copy', function() {
-
-	return gulp.src([ 'src/*.html', 'src/assets/**/'], {
+	return gulp.src([ 'src/*.html', 'src/assets/**/', 'src/*.png', 'src/*.ico', 'src/*.json'], {
 		base: 'src'
 	})
 	.pipe(gulp.dest('dist/'));
-
 });
 
-gulp.task('build', function(callback) {
+gulp.task('build',
+	gulp.series('clean', 'images', 'css', 'js', 'copy', function (callback) {
+		callback()
+	}));
 
-	runSequence('clean', 'images', 'css', 'js', 'copy', callback);
-
-});
-
-
-gulp.task('default', ['sass', 'css', 'js', 'copy', 'serve', 'watch']);
+gulp.task('default', gulp.series('sass', 'css', 'js', 'copy', 'serve', 'watch'));
